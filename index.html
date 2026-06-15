@@ -1,11 +1,175 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Amber's Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Personal Website</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <h1>Hello, I am Amber!</h1>
-  <p>這是我的個人網頁。</p>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="site-title" href="index.html">Your Name</a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="more.html">More</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-hero container">
+      <aside class="profile-panel" aria-label="Profile summary">
+        <!-- Replace this placeholder with your own profile photo later. -->
+        <div class="profile-photo">Photo</div>
+
+        <!-- Edit these lines with your name, year, school, and field. -->
+        <h1>Your Name</h1>
+        <p class="profile-role">Your current role / student year</p>
+        <p class="profile-field">Your major or main field</p>
+
+        <!-- Replace # with your real contact and social links. -->
+        <div class="social-links" id="contact">
+          <a href="#" aria-label="Email">@</a>
+          <a href="#" aria-label="GitHub">GH</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Resume or CV">CV</a>
+        </div>
+      </aside>
+
+      <div class="about-content">
+        <div class="about-intro">
+          <p class="eyebrow">About Me</p>
+          <h2>About Me</h2>
+          <!-- Replace this paragraph with your own short bio. -->
+          <p>
+            Write a short introduction about yourself here. You can mention what you study,
+            what topics you are interested in, what you enjoy building, and what kind of
+            projects you hope to work on.
+          </p>
+          <!-- Replace # with a real CV file link when you add one. -->
+          <a class="button primary" href="#">Download CV</a>
+        </div>
+
+        <div class="about-columns">
+          <section>
+            <h3>Interests</h3>
+            <!-- Replace these with your real interests. -->
+            <ul class="simple-list">
+              <li>Interest placeholder</li>
+              <li>Learning topic placeholder</li>
+              <li>Project area placeholder</li>
+              <li>Hobby or activity placeholder</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Education</h3>
+            <!-- Replace these with your education summary. -->
+            <div class="summary-list">
+              <article>
+                <span class="summary-icon">ED</span>
+                <div>
+                  <h4>Degree or Program Placeholder</h4>
+                  <p>School name placeholder</p>
+                </div>
+              </article>
+              <article>
+                <span class="summary-icon">ED</span>
+                <div>
+                  <h4>Coursework or Program Placeholder</h4>
+                  <p>Organization or school placeholder</p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="resume-section container">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="timeline-icon">EX</span>
+          <div class="timeline-content">
+            <!-- Replace this example with a real experience. -->
+            <h3>Experience Title Placeholder</h3>
+            <p class="timeline-meta">Organization placeholder</p>
+            <p class="timeline-date">Month Year - Month Year</p>
+            <ul>
+              <li>Describe one responsibility, project, or achievement here.</li>
+              <li>Describe another contribution or skill you practiced here.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <span class="timeline-icon">EX</span>
+          <div class="timeline-content">
+            <!-- Replace this example with a real experience. -->
+            <h3>Experience Title Placeholder</h3>
+            <p class="timeline-meta">Organization placeholder</p>
+            <p class="timeline-date">Month Year - Month Year</p>
+            <ul>
+              <li>Describe your role, teamwork, leadership, or technical work here.</li>
+              <li>Describe the outcome or what you learned here.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="resume-section container">
+      <h2>Education</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="timeline-icon">ED</span>
+          <div class="timeline-content">
+            <!-- Replace this example with your current or past education. -->
+            <h3>Degree or Program Placeholder</h3>
+            <p class="timeline-meta">School name placeholder</p>
+            <p class="timeline-date">Month Year - Present</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <span class="timeline-icon">ED</span>
+          <div class="timeline-content">
+            <!-- Replace this example with another education entry. -->
+            <h3>Program or Coursework Placeholder</h3>
+            <p class="timeline-meta">School or organization placeholder</p>
+            <p class="timeline-date">Month Year - Month Year</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="resume-section container">
+      <h2>Skills</h2>
+      <!-- Replace these placeholders with your real skills. -->
+      <ul class="tag-list large-tags">
+        <li>Skill placeholder</li>
+        <li>Programming language placeholder</li>
+        <li>Tool placeholder</li>
+        <li>Topic placeholder</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <!-- Update the name after you customize the site. -->
+      <p>&copy; 2026 Your Name. Built with HTML, CSS, and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
