@@ -498,6 +498,49 @@ h3 {
   font-size: 0.98rem;
 }
 
+.language-scores {
+  display: grid;
+  gap: 8px;
+  max-width: 920px;
+  margin: 14px 0 0;
+}
+
+.language-scores div {
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr);
+  gap: 12px;
+  align-items: baseline;
+  border-left: 3px solid var(--accent);
+  background: var(--surface-muted);
+  padding: 8px 12px;
+}
+
+.language-scores dt,
+.language-scores dd {
+  margin: 0;
+}
+
+.language-scores dt {
+  color: var(--accent-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.language-scores dd {
+  color: var(--text);
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.language-scores span {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -1048,6 +1091,11 @@ h3 {
 
   .timeline-item::before {
     left: 18px;
+  }
+
+  .language-scores div {
+    grid-template-columns: 1fr;
+    gap: 3px;
   }
 
   .hero {
